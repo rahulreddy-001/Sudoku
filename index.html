@@ -5,9 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sample</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css">
 	<link href="index.css" rel="stylesheet">
 </head>
-<body>
+<body >
+	<div class="navbar-fixed">
+  <nav class="navbar shadow-1 primary">
+    <a href="#" target="_blank" class="navbar-brand">SUDOKU</a>
+  </nav>
+</div>
 <table id="grid">
 <tr class="row">
 	<td><input class="cell" type="text"  maxlength="1" id="_00"></td>
@@ -107,11 +113,12 @@
 	<td><input class="cell" type="text"  maxlength="1" id="_87"></td>
 	<td><input class="cell" type="text"  maxlength="1" id="_88"></td>
 </tr>
-</table>
-<button type="submit"id="btn">Submit</button>
+</table><br>
+<button id="btn" class="btn shadow-1 primary rounded-4">Submit</button>
+<br>
 <div id="output"></div>
 <body>
-<script src="./script.js"></script>
+<script src="script.js"></script>
 </html>
 
 

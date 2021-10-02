@@ -82,7 +82,9 @@ const Output = () => {
     for (j = 0; j < 9; j++) if (verifyElement(i, j)) flag++;
   if (flag === 81) res = "Answer is CORRECT !";
   else res = "Answer is WRONG Better luck Next time";
-  document.querySelector("#output").innerHTML = res;
+  var temp = `<div class="btn shadow-1 primary rounded-tr0 rounded-bl0 rounded-tl3 rounded-br3">${res}
+</div>`;
+  document.querySelector("#output").innerHTML = temp;
 };
 function verifyElement(row, column) {
   const val = arr[row][column];
